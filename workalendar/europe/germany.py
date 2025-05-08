@@ -88,7 +88,7 @@ class Berlin(Germany):
         days = super().get_variable_days(year)
         if year >= 2019:
             days.append(self.get_international_womens_day(year))
-        if year == 2020:
+        if year in (2020, 2025):
             days.append(self.get_liberation_day(year))
         return days
 
